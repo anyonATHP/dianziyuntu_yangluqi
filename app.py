@@ -34,3 +34,9 @@ def plot():
     plt.savefig('static/electron_density.png', bbox_inches='tight')
     plt.close()
     return render_template('result.html', n=n, l=l, m=m)
+
+if __name__ == '__main__':
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
