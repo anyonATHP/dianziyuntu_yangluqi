@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/plot', methods=['POST'])
+@app.route('/plot', methods=['GET'])
 def plot():
     n = float(request.form['n'])
     l = float(request.form['l'])
@@ -37,6 +37,6 @@ def plot():
 
 if __name__ == '__main__':
     import os
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("GET", 5000))
     app.run(host='0.0.0.0', port=port)
 
