@@ -37,6 +37,5 @@ def plot():
 
 if __name__ == '__main__':
     import os
-    port = int(os.environ.get("GET", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(port=8000,debug=True)
 
