@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>电子云图模拟</title>
+  <meta charset="UTF-8">
+  <title>电子云图生成器</title>
 </head>
 <body>
-    <h1>输入氢原子量子数</h1>
-    <form action="/plot" method="get">
-      <!-- 确保下面的 input 都有 name 属性 -->
-      <label>n: <input type="text" name="n" required></label><br>
-      <label>l: <input type="text" name="l" required></label><br>
-      <label>m: <input type="text" name="m" required></label><br>
-      <button type="submit">生成电子云图</button>
-    </form>
-
+  <h1>输入量子数生成电子云图</h1>
+  <form action="/plot" method="get">
+    <label>n: <input type="text" name="n" required></label><br>
+    <label>l: <input type="text" name="l" required></label><br>
+    <label>m: <input type="text" name="m" required></label><br>
+    <button type="submit">生成</button>
+  </form>
 </body>
 </html>
+
