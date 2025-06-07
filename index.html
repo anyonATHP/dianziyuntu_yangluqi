@@ -6,11 +6,13 @@
 </head>
 <body>
     <h1>输入氢原子量子数</h1>
-    <form action="/plot" method="post">
-        <label>n: </label><input type="text" name="n"><br>
-        <label>l: </label><input type="text" name="l"><br>
-        <label>m: </label><input type="text" name="m"><br>
-        <input type="submit" value="生成电子云图">
+    <form action="/plot" method="get">
+      <!-- 确保下面的 input 都有 name 属性 -->
+      <label>n: <input type="text" name="n" required></label><br>
+      <label>l: <input type="text" name="l" required></label><br>
+      <label>m: <input type="text" name="m" required></label><br>
+      <button type="submit">生成电子云图</button>
     </form>
+
 </body>
 </html>
